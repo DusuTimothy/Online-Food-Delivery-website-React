@@ -5,6 +5,7 @@ import Hero from './Hero';
 import NearByRestaunt from './NearByRestaunt';
 import SearchByRestaut from './SearchByRestaut';
 import WhatsOnYourMind from './WhatsOnYourMind';
+import Personalized from './Personalized';
 
 const App = () => {
   const { data, isLoading, error } = useFetch('http://dummyjson.com/recipes');
@@ -12,11 +13,9 @@ const App = () => {
   if (isLoading) {
     return <div className='shadow-lg px-4 py-2 m-50'>Loading data, please wait...</div>
   }
-
   if (error) {
     return <div className='shadow-lg px-4 py-2'>Error: {error}</div>
   }
-
   return (
     <>
       <div className='font-poppins mx-25 mt-5'>
@@ -25,8 +24,9 @@ const App = () => {
         <NearByRestaunt recipes={data?.recipes || []} />
       </div>
       <SearchByRestaut />
-      <div>
+      <div className='mx-25'>
         <WhatsOnYourMind recipes={data?.recipes || []} />
+        <Personalized recipes={data?.recipes || []} />
       </div>
     </>
 
