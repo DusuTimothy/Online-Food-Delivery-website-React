@@ -7,9 +7,9 @@ const WhatsOnYourMind = ({ recipes }) => {
       <div className=' flex justify-between items-center '>
         {recipes && recipes.slice(8, 14).map((recipe) => (
           <div key={recipe.id} className=''>
-            <img src={recipe.image} alt={recipe.name} width={120} 
-            className='rounded-full'/>
-            <p className='mt-2'>{recipe.name}</p>
+            <img src={recipe.image} alt={recipe.name} width={120}
+              className='rounded-full' />
+            <p className='mt-2 text-sm text-center'>{recipe.name}</p>
 
           </div>
         ))}
