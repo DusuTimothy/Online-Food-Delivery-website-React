@@ -1,0 +1,36 @@
+import React from 'react'
+import useFetch from './useFetch'
+import Nav from './Nav';
+import Hero from './Hero';
+import NearByRestaunt from './NearByRestaunt';
+import SearchByRestaut from './SearchByRestaut';
+import WhatsOnYourMind from './WhatsOnYourMind';
+
+const App = () => {
+  const { data, isLoading, error } = useFetch('http://dummyjson.com/recipes');
+
+  if (isLoading) {
+    return <div className='shadow-lg px-4 py-2 m-50'>Loading data, please wait...</div>
+  }
+
+  if (error) {
+    return <div className='shadow-lg px-4 py-2'>Error: {error}</div>
+  }
+
+  return (
+    <>
+      <div className='font-poppins mx-25 mt-5'>
+        <Nav />
+        <Hero />
+        <NearByRestaunt recipes={data?.recipes || []} />
+      </div>
+      <SearchByRestaut />
+      <div>
+        <WhatsOnYourMind />
+      </div>
+    </>
+
+  )
+}
+
+export default App
