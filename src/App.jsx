@@ -26,7 +26,7 @@ const App = () => {
       </div>
       <SearchByRestaut />
       <div>
-        <WhatsOnYourMind />
+        <WhatsOnYourMind recipes={data?.recipes || []} />
       </div>
     </>
 
