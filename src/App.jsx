@@ -7,6 +7,7 @@ import SearchByRestaut from './SearchByRestaut';
 import WhatsOnYourMind from './WhatsOnYourMind';
 import Personalized from './Personalized';
 import Footer from './Footer';
+import SignUp from './SignUp';
 
 const App = () => {
   const { data, isLoading, error } = useFetch('http://dummyjson.com/recipes');
@@ -28,8 +29,11 @@ const App = () => {
       <div className='mx-25'>
         <WhatsOnYourMind recipes={data?.recipes || []} />
         <Personalized recipes={data?.recipes || []} />
-        <Footer />
       </div>
+      <Footer />
+
+      <SignUp />
+
     </>
 
   )
