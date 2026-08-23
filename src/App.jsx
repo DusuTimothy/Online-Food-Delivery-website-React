@@ -32,8 +32,10 @@ const App = () => {
       </div>
       <Footer />
 
-      <SignUp />
+      <div>
+        <SignUp />
 
+      </div>
     </>
 
   )
