@@ -5,14 +5,14 @@ import { RxCross2 } from 'react-icons/rx'
 
 const SignUp = () => {
   return (
-    <div className='bg-[#FC8019] *:grid justify-center shadow-lg m-50'>
-      <div className="flex items-center justify-between">
-        <span>Log in or sign up</span>
-        <span className=''><RxCross2 /></span>
+    <div className='bg-[#FC8019] grid  shadow-lg rounded-xl px-20 pt-4 border'>
+      <div className="flex items-center justify-center ">
+        <span className='ml-auto'>Log in or sign up</span>
+        <span className='ml-auto'><RxCross2 /></span>
       </div>
       <div className="welcome">Welcome to FitMe</div>
-      <form className=''>
-        <label className='block'> Email address</label>
+      <form className='grid'>
+        <label className='block ml-auto'> Email address</label>
         <input type="email"
           required
           placeholder='you@example.com'
