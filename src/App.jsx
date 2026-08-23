@@ -34,8 +34,8 @@ const App = () => {
 
       <div>
         <SignUp />
-
       </div>
+
     </>
 
   )
