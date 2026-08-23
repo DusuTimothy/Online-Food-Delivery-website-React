@@ -20,20 +20,23 @@ const App = () => {
   }
   return (
     <>
-      <div className='font-poppins mx-25 mt-5'>
-        <Nav />
-        <Hero />
-        <NearByRestaunt recipes={data?.recipes || []} />
-      </div>
-      <SearchByRestaut />
-      <div className='mx-25'>
-        <WhatsOnYourMind recipes={data?.recipes || []} />
-        <Personalized recipes={data?.recipes || []} />
-      </div>
-      <Footer />
+      <div className='relative'>
+        <div className='font-poppins mx-25 mt-5'>
+          <Nav />
+          <Hero />
+          <NearByRestaunt recipes={data?.recipes || []} />
+        </div>
+        <SearchByRestaut />
+        <div className='mx-25'>
+          <WhatsOnYourMind recipes={data?.recipes || []} />
+          <Personalized recipes={data?.recipes || []} />
+        </div>
+        <Footer />
 
-      <div>
-        <SignUp />
+        <div className='absolute top-0 z-10'>
+          <SignUp />
+        </div>
+
       </div>
 
     </>

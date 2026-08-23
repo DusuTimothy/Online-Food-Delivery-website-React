@@ -5,7 +5,7 @@ import { RxCross2 } from 'react-icons/rx'
 
 const SignUp = () => {
   return (
-    <div className='grid justify-center shadow-lg m-50'>
+    <div className='bg-[#FC8019] *:grid justify-center shadow-lg m-50'>
       <div className="flex items-center justify-between">
         <span>Log in or sign up</span>
         <span className=''><RxCross2 /></span>
