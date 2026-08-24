@@ -33,7 +33,7 @@ const App = () => {
         </div>
         <Footer />
 
-        <div className='absolute top-20 left-[30%] right-[30%] text-center'>
+        <div className='absolute top-5 left-[30%] right-[30%] text-center'>
           <SignUp />
         </div>
 
