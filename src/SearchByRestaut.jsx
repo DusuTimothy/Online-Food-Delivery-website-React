@@ -1,12 +1,13 @@
 import React from 'react'
+import { TbArrowsCross } from 'react-icons/tb'
 
 const SearchByRestaut = () => {
   return (
     <div className='bg-[#FC8019] my-20'>
-      <div className='text-white font-bold flex items-center gap-5 py-10 mx-60'>
-        <p className='md:w-70'>
+      <div className='text-white font-bold md:flex items-center gap-5 py-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+        <p className='md:w-70 flex items-center gap-2'>
           Search by Restaurant
-          <span></span>
+          <span><TbArrowsCross /></span>
         </p>
 
         <input
