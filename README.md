@@ -1,17 +1,79 @@
-# React + Vite
+# Online Food Delivery Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based food delivery web app built with modern tools. The site is live at https://online-food-delivery-website-react.vercel.app
 
-Currently, two official plugins are available:
+## What This Does
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This is a frontend for ordering food online. Browse restaurants and food items, add stuff to your cart, and checkout. Pretty straightforward stuff.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19** - UI framework
+- **Vite** - build tool and dev server
+- **Tailwind CSS** - styling
+- **React Router 7** - navigation
+- **React Icons** - icon library
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Online-Food-Delivery-website-React
+First time setup:
+```bash
+npm install
+```
+
+Run the dev server:
+```bash
+npm run dev
+```
+
+Open your browser and go to the local URL it gives you (usually `http://localhost:5173`).
+
+To build for production:
+```bash
+npm run build
+```
+
+Check the production build locally:
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```
+src/
+├── components/     - React components
+├── pages/         - Page components
+├── styles/        - CSS files
+└── App.jsx        - Main app component
+```
+
+## Features
+
+- Browse food items from different restaurants
+- Add items to cart
+- Place orders
+- Responsive design that works on mobile and desktop
+
+## Known Issues / TODO
+
+- Need to add payment integration
+- User authentication not done yet
+- Filter and search functionality could be better
+- Mobile nav could use some work
+
+## Deployment
+
+The site is deployed on Vercel. Just push to the main branch and it deploys automatically.
+
+## Contributing
+
+Feel free to fork and submit PRs if you want to improve something.
+
+## License
+
+No specific license yet.
+
+## Repository
+
+https://github.com/DusuTimothy/Online-Food-Delivery-website-React
