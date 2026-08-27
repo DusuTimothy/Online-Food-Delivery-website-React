@@ -1,4 +1,3 @@
-import React from 'react'
 import { TbArrowsCross } from 'react-icons/tb'
 
 const SearchByRestaut = () => {

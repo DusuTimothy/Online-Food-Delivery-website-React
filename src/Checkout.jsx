@@ -1,4 +1,3 @@
-import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { FaPercentage } from 'react-icons/fa';
 import { FiSearch, FiHeart, FiPlus, FiMinus } from 'react-icons/fi';
@@ -7,11 +6,6 @@ const Checkout = ({ cart, setCart }) => {
   const location = useLocation();
   const navigate = useNavigate();
   const selectedRecipe = location.state?.recipe;
-  const [deliveryLocation, setDeliveryLocation] = React.useState('Hyderabad');
-  const [deliveryDate, setDeliveryDate] = React.useState('');
-  const [deliveryTime, setDeliveryTime] = React.useState('16:30');
-  const [orderType, setOrderType] = React.useState('Order Now');
-  const [note, setNote] = React.useState('');
   const recipePrice = selectedRecipe ? Math.max(120, Math.round(selectedRecipe.caloriesPerServing || 200)) : 0;
   const addToCart = () => {
     if (!selectedRecipe) return;
