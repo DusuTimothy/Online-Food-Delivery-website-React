@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className='text-white font-bold bg-[#FC8019] py-10'>
       <div className='mx-auto flex max-w-7xl flex-col gap-6 px-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8'>
-        <img src="src/assets/fitmeWhiteLogo.png" alt="logo" width={100} className='w-[100px] h-auto' />
+        <img src="/fitmeWhiteLogo.png" alt="logo" width={100} className='w-[100px] h-auto' />
 
         <div className='flex flex-wrap justify-center gap-4 text-sm sm:gap-6 lg:justify-start'>
           <span>About</span>

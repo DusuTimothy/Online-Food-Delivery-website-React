@@ -12,7 +12,7 @@ const Nav = ({ onSearch, onSignIn, onCart, user }) => {
 
   return (
     <div className='flex flex-col gap-4 md:flex-row md:items-center md:justify-between'>
-      <img src="src/assets/fitMeLogo.png" alt="fit-me-logo" width={90} className='w-22.5 h-auto' />
+      <img src="/fitMeLogo.png" alt="fit-me-logo" width={90} className='w-22.5 h-auto' />
 
       <div className='flex flex-col gap-3 sm:flex-row sm:items-center md:justify-end md:flex-1'>
         <form onSubmit={handleSubmit} className="relative flex-1 min-w-0 sm:max-w-md md:max-w-xl">
