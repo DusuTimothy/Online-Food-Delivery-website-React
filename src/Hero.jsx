@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className='mt-20 lg:flex gap-10 items-center'>
       <div className=''>
-        <h1 className=' font-bold items-center sm:text-4xl'>
+        <h1 className=' font-bold items-center text-2xl sm:text-4xl'>
           Premium <strong className='text-[#FC8019]'>quality <br /></strong>
           <span className='flex gap-2 py-3'>Food for your <img src="/banana.png" width={50} alt="banana" className='h-10'/><strong className='text-[#FC8019]'>healthy</strong></span>
           <span className='flex gap-2'><img src="/apple.png" alt="apple" width={50} height={5} />
