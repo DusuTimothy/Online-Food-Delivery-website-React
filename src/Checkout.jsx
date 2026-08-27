@@ -100,7 +100,7 @@ const Checkout = ({ cart, setCart }) => {
               </h3>
               <span className="text-sm font-semibold text-gray-700 block mt-1">{selectedRecipe ? `₹${recipePrice}` : 'No item selected'}</span>
               <p className="text-xs text-gray-400 mt-3 leading-relaxed">
-                {selectedRecipe?.description || 'Click a food card to view it here and add it to your cart.'}
+                {selectedRecipe?.ingredients || 'Click a food card to view it here and add it to your cart.'}
               </p>
             </div>
 
