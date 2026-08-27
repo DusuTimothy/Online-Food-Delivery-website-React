@@ -27,10 +27,10 @@ const App = () => {
   const [cart, setCart] = useState([]);
 
   if (isLoading) {
-    return <div className='shadow-lg px-4 py-2 m-50'>Loading data, please wait...</div>
+    return <div className='text-4xl shadow-lg px-4 py-2 m-50'>Loading data, please wait...</div>
   }
   if (error) {
-    return <div className='shadow-lg px-4 py-2'>Error: {error}</div>
+    return <div className='text-4xl shadow-lg px-4 py-2'>Error: {error}</div>
   }
   const handleLogin = (account) => {
     localStorage.setItem('fitme-user', JSON.stringify(account));
