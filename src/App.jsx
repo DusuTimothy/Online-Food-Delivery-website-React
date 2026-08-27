@@ -27,7 +27,7 @@ const App = () => {
   const [cart, setCart] = useState([]);
 
   if (isLoading) {
-    return <div className='text-2xl shadow-lg px-4 py-2 m-50'>Loading data, please wait...</div>
+    return <div className='md:text-2xl shadow-lg px-4 py-2 md:m-50'>Loading data, please wait...</div>
   }
   if (error) {
     return <div className='text-2xl shadow-lg px-4 py-2'>Error: {error}</div>
