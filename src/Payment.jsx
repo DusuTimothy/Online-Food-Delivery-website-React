@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FiMinus, FiPlus } from 'react-icons/fi';
 
+
 export default function Payment({ cart, setCart }) {
     const [address, setAddress] = useState('Dno. 12-34-12, XYC Apartments, DOOR Colony, Hyderabad, Telangana');
     const [orderType, setOrderType] = useState('Subscription');
@@ -214,7 +215,7 @@ export default function Payment({ cart, setCart }) {
                                 <span className="text-sm font-bold text-gray-900">Total</span>
                                 <span className="text-xl font-extrabold text-gray-900">₹{total.toFixed(2)}</span>
                             </div>
-                            <button className="w-full bg-orange-500 text-white text-xs font-semibold py-3 rounded-lg shadow-sm hover:bg-orange-600 transition active:scale-[0.98]">
+                            <button type="button" onClick={() => alert('Payment successful')} className="w-full bg-orange-500 text-white text-xs font-semibold py-3 rounded-lg shadow-sm hover:bg-orange-600 transition active:scale-[0.98]">
                                 Proceed To Payment
                             </button>
                         </div>

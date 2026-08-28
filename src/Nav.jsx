@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import { FaSearch } from 'react-icons/fa'
 import { LiaShoppingBagSolid } from 'react-icons/lia'
+import { useNavigate } from 'react-router-dom'
 
 const Nav = ({ onSearch, onSignIn, onCart, user }) => {
   const [query, setQuery] = useState('')
+  const navigate = useNavigate()
 
   const handleSubmit = (event) => {
     event.preventDefault()
@@ -12,7 +14,7 @@ const Nav = ({ onSearch, onSignIn, onCart, user }) => {
 
   return (
     <div className='flex flex-col gap-4 md:flex-row md:items-center md:justify-between'>
-      <img src="/fitMeLogo.png" alt="fit-me-logo" width={90} className='w-22.5 h-auto' />
+      <img src="/fitMeLogo.png" alt="fit-me-logo" width={90} className='w-22.5 h-auto cursor-pointer' onClick={() => navigate('/')} />
 
       <div className='flex flex-col gap-3 sm:flex-row sm:items-center md:justify-end md:flex-1'>
         <form onSubmit={handleSubmit} className="relative flex-1 min-w-0 sm:max-w-md md:max-w-xl">
