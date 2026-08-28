@@ -35,6 +35,7 @@ const SignUp = ({ onClose, onLogin }) => {
             placeholder='You@example.com'
             className='block w-full border border-gray-300 py-2.5 pl-3 text-sm rounded-lg mt-2 outline-none focus:border-[#FC8019]'
           />
+          <label className='block mr-auto text-sm text-gray-700 mt-4'>Password</label>
           <input type="password"
             required
             minLength={6}
