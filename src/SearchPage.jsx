@@ -12,7 +12,7 @@ const SearchPage = ({ recipes, initialQuery = '' }) => {
     return (
         <div className="min-h-screen bg-white p-6 md:p-12 font-sans text-gray-800">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-                <h1 className="text-2xl font-bold">Search food</h1>
+                <h1 className="text-2xl font-bold">Search Food</h1>
                 <input
                     type="search"
                     value={query}
